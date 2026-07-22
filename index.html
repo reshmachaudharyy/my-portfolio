@@ -1,178 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Reshma Chaudhary</title>
+    <meta name="description" content="Personal portfolio of Reshma Chaudhary, an Information Technology student.">
+    <title>Reshma Chaudhary | IT Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Reshma Chaudhary</h1>
-        <p>Information Technology Student</p>
+    <header class="site-header">
+        <nav class="navbar">
+            <h1 class="logo">Reshma Chaudhary</h1>
 
-        <nav>
-            <ul>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
-        <hr>
     </header>
 
     <main>
 
-        <!-- About Section -->
-        <section id="about">
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="intro-text">Hello, I am Reshma Chaudhary</p>
+
+                <h3>Information Technology Student</h3>
+
+                <p>
+                    I am an Information Technology student interested in web development,
+                    programming, and exploring modern technologies.
+                </p>
+
+                <a href="#projects" class="primary-button">
+                    View My Projects
+                </a>
+            </div>
+
+            <div class="profile-image">
+                <img src="Images/reshma.jpeg"
+                     alt="Portrait of Reshma Chaudhary">
+            </div>
+        </section>
+
+
+        <section id="about" class="content-section">
+
             <h2>About Me</h2>
 
-            <figure>
-                <img src="reshma.jpeg" alt="Profile picture of Reshma Chaudhary" width="200">
-                <figcaption>Reshma Chaudhary</figcaption>
-            </figure>
-
-            <p>Hello! My name is <strong>Reshma Chaudhary</strong>.</p>
-            <p>I am currently studying Information Technology (IT).</p>
-            <p>I enjoy learning programming, web development, and exploring new technologies.</p>
-            <p>My goal is to become a skilled software developer and continue improving my technical knowledge.</p>
-
-            <hr>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-
-            <dl>
-                <dt>HTML5</dt>
-                <dd>I can create semantic and well-structured web pages.</dd>
-                <br>
-
-                <dt>C Programming</dt>
-                <dd>I have learned variables, loops, arrays, functions, and basic file handling.</dd>
-                <br>
-
-                <dt>Java</dt>
-                <dd>I understand the basics of object-oriented programming using Java.</dd>
-                <br>
-
-                <dt>Microsoft Office</dt>
-                <dd>I can use Microsoft Word, Excel, and PowerPoint for reports, presentations, and documentation.</dd>
-                <br>
-
-                <dt>Problem Solving</dt>
-                <dd>I enjoy solving logical and programming-related problems.</dd>
-            </dl>
-
-            <hr>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-
-            <article>
-                <h3>Programming Coursework</h3>
-                <p>I have completed practical assignments using C and Java during my studies.</p>
-            </article>
-
-            <article>
-                <h3>Web Development Practice</h3>
-                <p>I have created simple websites using semantic HTML5.</p>
-            </article>
-
-            <article>
-                <h3>Academic Projects</h3>
-                <p>I have worked on several college assignments related to programming and information technology.</p>
-            </article>
-
-            <hr>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-
-            <h2>Projects</h2>
-
-          <article>
-    <h3>Personal Portfolio Website</h3>
-    <p>A single-page portfolio website developed using semantic HTML5.</p>
-
-    <p>
-        Repository:
-        <a href="https://github.com/reshmachaudharyy/my-portfolio" target="_blank">
-            View Repository
-        </a>
-    </p>
-</article>
-
-<article>
-    <h3>Other Academic Projects</h3>
-    <p>
-        My GitHub profile contains my current and future academic projects
-        developed during my Information Technology studies.
-    </p>
-
-    <p>
-        GitHub Profile:
-        <a href="https://github.com/reshmachaudharyy" target="_blank">
-            View GitHub Profile
-        </a>
-    </p>
-</article>
-
-            <hr>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-            <form action="#" method="post">
-
-                <p>
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </p>
-
-                <p>
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="35" required></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
-
-            </form>
-
-            <p>Email: reshmachaudhary390@gmail.com</p>
+            <p>
+                I am an Information Technology student developing my knowledge of programming,
+                web development, and computer technologies. I enjoy learning through practical
+                projects and continuously improving my technical abilities.
+            </p>
 
             <p>
-                GitHub:
-                <a href="https://github.com/reshmachaudharyy" target="_blank">
-                    github.com/reshmachaudharyy
-                </a>
+                My current interests include creating websites, understanding software systems,
+                and developing practical solutions through technology.
             </p>
+
+        </section>
+
+
+        <section id="skills" class="content-section">
+
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <h3>Web Development</h3>
+
+                    <p>
+                        HTML5, CSS3, responsive layouts, and semantic webpage structures.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <h3>Programming</h3>
+
+                    <p>
+                        Knowledge of programming concepts and object-oriented programming.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <h3>Development Tools</h3>
+
+                    <p>
+                        GitHub, Visual Studio Code, Git, and other development tools.
+                    </p>
+                </article>
+
+
+                <article class="skill-card">
+                    <h3>Operating Systems</h3>
+
+                    <p>
+                        Experience working with Windows and Linux-based environments.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="projects" class="content-section">
+
+            <h2>Featured Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A responsive portfolio website developed using semantic HTML5 and CSS.
+                        The project demonstrates webpage structure, visual styling, and responsive design.
+                    </p>
+
+                    <a href="https://github.com/reshmachaudharyy"
+                       target="_blank"
+                       rel="noopener">
+                        View Project
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h3>Responsive Web Interface</h3>
+
+                    <p>
+                        A web interface designed to adapt to different screen sizes using modern
+                        CSS layout techniques and media queries.
+                    </p>
+
+                    <a href="https://github.com/reshmachaudharyy"
+                       target="_blank"
+                       rel="noopener">
+                        View Project
+                    </a>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h3>Student Technology Project</h3>
+
+                    <p>
+                        A practical academic project developed to strengthen problem-solving,
+                        programming, and software development skills.
+                    </p>
+
+                    <a href="https://github.com/reshmachaudharyy"
+                       target="_blank"
+                       rel="noopener">
+                        View Project
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="education" class="content-section">
+
+            <h2>Education</h2>
+
+            <article class="education-card">
+
+                <h3>
+                    Bachelor's Degree in Information Technology
+                </h3>
+
+                <p>
+                    Currently studying Information Technology and developing knowledge in
+                    programming, web development, databases, networking, and software systems.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section id="contact" class="content-section contact-section">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                I am open to learning opportunities, academic collaborations,
+                and technology-related projects.
+            </p>
+
+            <ul class="contact-list">
+
+                <li>
+                    <strong>Email:</strong>
+
+                    <a href="mailto:reshmachaudhary390@gmail.com">
+                        reshmachaudhary390@gmail.com
+                    </a>
+                </li>
+
+
+                <li>
+                    <strong>GitHub:</strong>
+
+                    <a href="https://github.com/reshmachaudharyy"
+                       target="_blank"
+                       rel="noopener">
+                        github.com/reshmachaudharyy
+                    </a>
+                </li>
+
+            </ul>
 
         </section>
 
     </main>
 
-    <hr>
 
-    <footer>
-        <p>&copy; 2026 Reshma Chaudhary. All Rights Reserved.</p>
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Reshma Chaudhary. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>
