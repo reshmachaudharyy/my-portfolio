@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentIndex = 0;
 
-    // Create indicator dots
+    // Create indicator dots automatically
     slides.forEach(function (slide, index) {
 
         const dot = document.createElement("button");
@@ -24,8 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         dot.addEventListener("click", function () {
+
             currentIndex = index;
             moveSlider();
+
         });
 
         dotsContainer.appendChild(dot);
@@ -33,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const dots = document.querySelectorAll(".dot");
 
-    // Move slider
+    // Move the slider
     function moveSlider() {
 
         track.style.transform =
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateDots();
     }
 
-    // Update active dot
+    // Update active indicator
     function updateDots() {
 
         dots.forEach(function (dot, index) {
@@ -61,11 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         currentIndex++;
 
+        // Loop back to first image
         if (currentIndex >= slides.length) {
             currentIndex = 0;
         }
 
         moveSlider();
+
     });
 
     // Previous button
@@ -73,14 +77,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         currentIndex--;
 
+        // Loop back to last image
         if (currentIndex < 0) {
             currentIndex = slides.length - 1;
         }
 
         moveSlider();
+
     });
 
-    // Initial state
+    // Display first image when page loads
     moveSlider();
 
 });
