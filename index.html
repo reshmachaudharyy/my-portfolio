@@ -1,290 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Personal portfolio of Reshma Chaudhary, an Information Technology student.">
-
-    <title>Reshma Chaudhary | IT Portfolio</title>
-
+    <title>Image Slider Library</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="site-header">
+    <main class="slider-section">
+        <h1>Image Slider Library</h1>
 
-        <nav class="navbar">
+        <div class="slider" aria-label="Image slider">
 
-            <h1 class="logo">Reshma Chaudhary</h1>
+            <div class="slider-viewport">
+                <div class="slider-track" id="sliderTrack">
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                    <div class="slide">
+                        <img
+                            src="https://picsum.photos/id/1015/1200/700"
+                            alt="Mountain landscape">
+                    </div>
 
-        </nav>
+                    <div class="slide">
+                        <img
+                            src="https://picsum.photos/id/1016/1200/700"
+                            alt="Forest and mountain landscape">
+                    </div>
 
-    </header>
+                    <div class="slide">
+                        <img
+                            src="https://picsum.photos/id/1025/1200/700"
+                            alt="Dog outdoors">
+                    </div>
 
-
-    <main>
-
-        <!-- Home Section -->
-
-        <section id="home" class="hero-section">
-
-            <div class="hero-content">
-
-                <p class="intro-text">Hello, I am</p>
-
-                <h2>Reshma Chaudhary</h2>
-
-                <h3>Information Technology Student</h3>
-
-                <p>
-                    I am an Information Technology student interested in web development,
-                    programming, and exploring modern technologies.
-                </p>
-
-                <a href="#projects" class="primary-button">
-                    View My Projects
-                </a>
-
+                </div>
             </div>
 
+<button
+    type="button"
+    class="nav-button prev"
+    id="prevButton"
+    aria-label="Previous image">
+    &#10094;
+</button>
 
-            <div class="profile-image">
+<button
+    type="button"
+    class="nav-button next"
+    id="nextButton"
+    aria-label="Next image">
+    &#10095;
+</button>
 
-                <img src="Images/reshma.jpeg"
-                    alt="Portrait of Reshma Chaudhary">
-
+            <div
+                class="dots"
+                id="dots"
+                aria-label="Slide indicators">
             </div>
 
-        </section>
-
-
-        <!-- About Section -->
-
-        <section id="about" class="content-section">
-
-            <h2>About Me</h2>
-
-            <p>
-                I am an Information Technology student developing my knowledge of programming,
-                web development, and computer technologies. I enjoy learning through practical
-                projects and continuously improving my technical abilities.
-            </p>
-
-            <p>
-                My current interests include creating websites, understanding software systems,
-                and developing practical solutions through technology.
-            </p>
-
-        </section>
-
-
-        <!-- Skills Section -->
-
-        <section id="skills" class="content-section">
-
-            <h2>Technical Skills</h2>
-
-            <div class="skills-grid">
-
-
-                <article class="skill-card">
-
-                    <h3>Web Development</h3>
-
-                    <p>
-                        HTML5, CSS3, responsive layouts, and semantic webpage structures.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <h3>Programming</h3>
-
-                    <p>
-                        Knowledge of programming concepts and object-oriented programming.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <h3>Development Tools</h3>
-
-                    <p>
-                        GitHub, Visual Studio Code, Git, and other development tools.
-                    </p>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <h3>Operating Systems</h3>
-
-                    <p>
-                        Experience working with Windows and Linux-based environments.
-                    </p>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- Projects Section -->
-
-        <section id="projects" class="content-section">
-
-            <h2>Projects and Online Work</h2>
-
-            <div class="projects-grid">
-
-
-                <article class="project-card">
-
-                    <h3>GitHub Profile</h3>
-
-                    <p>
-                        My GitHub profile contains my programming work, academic projects,
-                        and ongoing development activities.
-                    </p>
-
-                    <a href="https://github.com/reshmachaudharyy"
-                        target="_blank"
-                        rel="noopener">
-
-                        Visit GitHub Profile
-
-                    </a>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <h3>Portfolio Repository</h3>
-
-                    <p>
-                        This repository contains the source files for my responsive personal
-                        portfolio, including HTML, CSS, images, and project documentation.
-                    </p>
-
-                    <a href="https://github.com/reshmachaudharyy/my-portfolio"
-                        target="_blank"
-                        rel="noopener">
-
-                        View Repository
-
-                    </a>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- Education Section -->
-
-        <section id="education" class="content-section">
-
-            <h2>Education</h2>
-
-
-            <article class="education-card">
-
-                <h3>
-                    Bachelor's Degree in Information Technology
-                </h3>
-
-                <p>
-                    Currently studying Information Technology and developing knowledge in
-                    programming, web development, databases, networking, and software systems.
-                </p>
-
-            </article>
-
-        </section>
-
-
-        <!-- Contact Section -->
-
-        <section id="contact" class="content-section contact-section">
-
-            <h2>Contact Me</h2>
-
-            <p>
-                I am open to learning opportunities, academic collaborations,
-                and technology-related projects.
-            </p>
-
-
-            <ul class="contact-list">
-
-                <li>
-
-                    <strong>Email:</strong>
-
-                    <a href="mailto:reshmachaudhary390@gmail.com">
-
-                        reshmachaudhary390@gmail.com
-
-                    </a>
-
-                </li>
-
-
-                <li>
-
-                    <strong>GitHub:</strong>
-
-                    <a href="https://github.com/reshmachaudharyy"
-                        target="_blank"
-                        rel="noopener">
-
-                        github.com/reshmachaudharyy
-
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </section>
-
+        </div>
     </main>
 
-
-    <!-- Footer -->
-
-    <footer class="site-footer">
-
-        <p>
-            &copy; 2026 Reshma Chaudhary. All rights reserved.
-        </p>
-
-    </footer>
-
+    <script src="Javascript.js"></script>
 
 </body>
-
 </html>
